@@ -5,7 +5,7 @@ function App() {
   const [datetime, setDatetime] = useState('');
 
   const fetchDatetime = async () => {
-    const response = await fetch('http://127.0.0.1:5000/api/datetime');
+    const response = await fetch('http://127.0.0.1:3000/api/datetime');
     const data = await response.json();
     setDatetime(data.datetime);
   };
